@@ -1,37 +1,55 @@
 body{
+    display : flex;
+    align-items : center;
     font-size : 25px;
     margin : 20px;
-    
 
 }
 
-.homepage{  
+#homepage_id{  
     margin : auto;
     margin-top : 105px;
+    margin-bottom : 111px;
     border : 3px black solid;
     width: 1500px;
-    height : 1050px;
+    height: 822px;
     background-color: rgb(182, 186, 197);
 }
+
+.nav_bar{
+    background-color: #f5f5dc;;
+    border : 2px black solid;
+    display : flex;
+    flex-direction : row;
+    justify-content : end;
+    padding-right : 20px;
+    margin-bottom : 40px;
+}
+
+
+
 #skills_content{
     display : flex;
     flex-direction : column;
     justify-content : center;
-    align-items : center;
+    align-items : start;
     border : 3px black solid;
     height: 200px;
     width : 900px ;
     padding : 15px;
+    padding-left : 30px;
     background-color: #f5f5dc;
     border-radius : 10px;
     margin : auto;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display : none;
 }
 
 #skills_content button{
     font-size : 22px;
     border-radius : 6px;
+    position: relative;
+    left: 402px;
     
 }
 
@@ -55,6 +73,13 @@ body{
     position : relative;
     border-radius : 10px;
 }
+#profile_picture{
+    position : absolute;
+    inset-inline-start: 110px; /*move horizontically */
+    inset-block-start: 110px; /*move vertically */
+    width : 200px;
+    height : auto;
+}
 
 #graphic_design{
 
@@ -76,13 +101,10 @@ body{
     display : flex;
     justify-content : center;
     flex-direction : column;
-    border : 2px black solid;
     padding : 10px;
     width : 330px;
     position : relative;
     left : 1150px;
-
-
 }
 
 #contact1{
