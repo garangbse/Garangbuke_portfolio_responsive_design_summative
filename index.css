@@ -1,0 +1,274 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(240, 240, 222);
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#main_background_image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#black_rectangle_background {
+    position: absolute;
+    width: 90%;
+    max-width: 2000px;
+    height: auto;
+    min-height: 100%;
+    left: 50%;
+    top: 100px;
+    transform: translateX(-50%);
+}
+
+#homepage_id {
+    position: relative;
+    margin: 105px auto;
+    width: 90%;
+    max-width: 1500px;
+    height: auto;
+    background-color: rgb(212, 212, 212);
+    border: 3px black solid;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.nav_bar {
+    background-color: #f5f5dc;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 15px 20px;
+    margin-bottom: 40px;
+    border-radius: 14px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#projects_link a {
+    text-decoration: none;
+    color: inherit;
+}   
+
+
+
+#skills_content {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 3px black solid;
+    width: 90%;
+    max-width: 900px;
+    padding: 15px 30px;
+    background-color: #f5f5dc;
+    border-radius: 10px;
+    margin: 0 auto 40px auto;
+}
+
+#skills_content button {
+    font-size: 22px;
+    border-radius: 6px;
+    position: relative;
+    margin-top: 15px;
+    align-self: center;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+#skills_content.show {
+    display: flex;
+}
+
+#intro_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px black solid;
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    background-color: #f5f5dc;
+    padding: 20px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+#profile_picture {
+    position: relative;
+    width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#graphic_design {
+    margin-bottom: 13px;
+    text-align: center;
+}
+
+#name {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#abtme_content {
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.contact_me {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    width: 90%;
+    max-width: 330px;
+    position: relative;
+    margin: 30px auto;
+}
+
+#contact1 {
+    margin: 0;
+}
+
+#projects_heading {
+    margin-top: 70px;
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    border: 2px white solid;
+}
+
+#projects_title h2 {
+    margin-top: 50px;
+    text-decoration: underline;
+    color: black;
+}
+
+#projects_title p {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    border: 3px white solid;
+    width: 100%;
+    max-width: 1650px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    #homepage_id {
+        margin-top: 70px;
+        width: 95%;
+        padding: 15px;
+    }
+
+    .nav_bar {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #intro_content {
+        padding: 15px;
+    }
+
+    #profile_picture {
+        width: 150px;
+        margin-bottom: 15px;
+    }
+
+    #projects_title h2 {
+        margin-top: 40px;
+    }
+
+    #projects_title p {
+        font-size: 22px;
+    }
+
+    #projects_heading {
+        margin-top: 50px;
+    }
+    
+    .projects {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    #homepage_id {
+        margin-top: 50px;
+        padding: 10px;
+        width: 98%;
+    }
+
+    .nav_bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_bar > * {
+        margin: 5px 0;
+    }
+
+    #profile_picture {
+        width: 120px;
+    }
+
+    #skills_content {
+        padding: 10px 15px;
+        width: 95%;
+    }
+
+    #skills_content button {
+        font-size: 18px;
+    }
+
+    #projects_heading {
+        margin-top: 30px;
+        padding: 5px;
+    }
+    
+    #projects_title p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .contact_me {
+        font-size: 14px;
+    }
+}
